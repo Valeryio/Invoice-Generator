@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+    <style>
+
+              @page {
+    size: a4 portrait;
+    margin: 0mm 0mm 0mm 0mm;
+    counter-increment: page;
+  }
+        // Business address<br/>City, State, IN - 000 000
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // TAX ID 00XXXXX1234X0XX
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Terms & Conditions
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Invoice of (USD)
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $4,950.00
+            color: #E87117;
+             font-size: 20px;
+             font-family: Inter;
+             font-weight: 700;
+             line-height: 28px;
+             word-wrap: break-word
+            ---
+            // Invoice number
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // #AB2324-01
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Reference
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // INV-057
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Invoice date
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // 01 Aug, 2023
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Subject
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Design System
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Due date
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // 15 Aug, 2023
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Billed to
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Company Name
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Company address<br/>City, Country - 00000
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // +0 (000) 123-4567
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Item Detail
+            color: #5E6470;
+             font-size: 8px;
+             font-family: Inter;
+             font-weight: 600;
+             text-transform: uppercase;
+             line-height: 12px;
+             letter-spacing: 0.32px;
+             word-wrap: break-word
+            ---
+            // Qty
+            color: #5E6470;
+             font-size: 8px;
+             font-family: Inter;
+             font-weight: 600;
+             text-transform: uppercase;
+             line-height: 12px;
+             letter-spacing: 0.32px;
+             word-wrap: break-word
+            ---
+            // Rate
+            color: #5E6470;
+             font-size: 8px;
+             font-family: Inter;
+             font-weight: 600;
+             text-transform: uppercase;
+             line-height: 12px;
+             letter-spacing: 0.32px;
+             word-wrap: break-word
+            ---
+            // Amount
+            color: #5E6470;
+             font-size: 8px;
+             font-family: Inter;
+             font-weight: 600;
+             text-transform: uppercase;
+             line-height: 12px;
+             letter-spacing: 0.32px;
+             word-wrap: break-word
+            ---
+            // Item Name
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Item Name
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Item description
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Item description
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // 1
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // 1
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $3,000.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $1,500.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $3,000.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $1,500.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $4,500.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $4,950.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 700;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // $450.00
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Subtotal
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Total
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 700;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Tax (10%)
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 500;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Thanks for the business.
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 600;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Please pay within 15 days of receiving this invoice.
+            color: #1A1C21;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // Panda, Inc
+            color: #E87117;
+             font-size: 18px;
+             font-family: Inter;
+             font-weight: 600;
+             word-wrap: break-word
+            ---
+            // www.website.com
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // hello@email.com
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+            ---
+            // +91 00000 00000
+            color: #5E6470;
+             font-size: 10px;
+             font-family: Inter;
+             font-weight: 400;
+             line-height: 14px;
+             word-wrap: break-word
+    </style>
+
+    <div style="max-width: 800px; height: 100%; position: relative; background: #F9FAFC">
+        <div style="left: 435px; top: 50px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 2px; display: inline-flex">
+            <div style="text-align: right; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">Business address<br/>City, State, IN - 000 000</div>
+            <div style="text-align: right; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">TAX ID 00XXXXX1234X0XX</div>
+        </div>
+        <div style="left: 32px; top: 786px; position: absolute; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Terms & Conditions</div>
+        <div style="width: 563px; height: 644px; left: 16px; top: 118px; position: absolute; background: white; border-radius: 12px; border: 0.50px #D7DAE0 solid">
+            <div style="left: 442px; top: 20px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 2px; display: inline-flex">
+                <div style="text-align: right; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Invoice of (USD)</div>
+                <div style="text-align: right; color: #E87117; font-size: 20px; font-family: Inter; font-weight: 700; line-height: 28px; word-wrap: break-word">$4,950.00</div>
+            </div>
+            <div style="left: 244px; top: 20px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Invoice number</div>
+                <div style="color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">#AB2324-01</div>
+            </div>
+            <div style="left: 244px; top: 76px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Reference</div>
+                <div style="width: 41px; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">INV-057</div>
+            </div>
+            <div style="left: 244px; top: 132px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Invoice date</div>
+                <div style="color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">01 Aug, 2023</div>
+            </div>
+            <div style="left: 16px; top: 132px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Subject </div>
+                <div style="color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">Design System</div>
+            </div>
+            <div style="left: 483px; top: 132px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 4px; display: inline-flex">
+                <div style="text-align: right; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Due date</div>
+                <div style="text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">15 Aug, 2023</div>
+            </div>
+            <div style="left: 16px; top: 20px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 4px; display: inline-flex">
+                <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Billed to</div>
+                <div style="flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 2px; display: flex">
+                    <div style="color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">Company Name</div>
+                    <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">Company address<br/>City, Country - 00000</div>
+                    <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">+0 (000) 123-4567</div>
+                </div>
+            </div>
+            <div style="left: 16px; top: 196px; position: absolute; color: #5E6470; font-size: 8px; font-family: Inter; font-weight: 600; text-transform: uppercase; line-height: 12px; letter-spacing: 0.32px; word-wrap: break-word">Item Detail</div>
+            <div style="width: 531px; height: 0px; left: 16px; top: 188px; position: absolute; border: 0.50px #D7DAE0 solid"></div>
+            <div style="width: 531px; height: 0px; left: 16px; top: 216px; position: absolute; border: 0.50px #D7DAE0 solid"></div>
+            <div style="width: 531px; height: 0px; left: 16px; top: 312px; position: absolute; border: 0.50px #D7DAE0 solid"></div>
+            <div style="width: 240px; height: 0px; left: 307px; top: 376px; position: absolute; border: 0.50px #D7DAE0 solid"></div>
+            <div style="left: 307px; top: 196px; position: absolute; color: #5E6470; font-size: 8px; font-family: Inter; font-weight: 600; text-transform: uppercase; line-height: 12px; letter-spacing: 0.32px; word-wrap: break-word">Qty</div>
+            <div style="width: 80px; left: 347px; top: 196px; position: absolute; text-align: right; color: #5E6470; font-size: 8px; font-family: Inter; font-weight: 600; text-transform: uppercase; line-height: 12px; letter-spacing: 0.32px; word-wrap: break-word">Rate</div>
+            <div style="width: 100px; left: 447px; top: 196px; position: absolute; text-align: right; color: #5E6470; font-size: 8px; font-family: Inter; font-weight: 600; text-transform: uppercase; line-height: 12px; letter-spacing: 0.32px; word-wrap: break-word">Amount</div>
+            <div style="left: 16px; top: 228px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">Item Name</div>
+            <div style="left: 16px; top: 270px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">Item Name</div>
+            <div style="left: 16px; top: 244px; position: absolute; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">Item description</div>
+            <div style="left: 16px; top: 286px; position: absolute; color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">Item description</div>
+            <div style="left: 307px; top: 228px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">1</div>
+            <div style="left: 307px; top: 272px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">1</div>
+            <div style="left: 377px; top: 228px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$3,000.00</div>
+            <div style="left: 379px; top: 272px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$1,500.00</div>
+            <div style="left: 497px; top: 228px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$3,000.00</div>
+            <div style="left: 499px; top: 272px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$1,500.00</div>
+            <div style="left: 497px; top: 324px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$4,500.00</div>
+            <div style="left: 494px; top: 388px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 700; line-height: 14px; word-wrap: break-word">$4,950.00</div>
+            <div style="left: 506px; top: 350px; position: absolute; text-align: right; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">$450.00</div>
+            <div style="left: 307px; top: 324px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Subtotal</div>
+            <div style="left: 307px; top: 388px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 700; line-height: 14px; word-wrap: break-word">Total</div>
+            <div style="left: 307px; top: 350px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 500; line-height: 14px; word-wrap: break-word">Tax (10%)</div>
+            <div style="left: 16px; top: 610px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 600; line-height: 14px; word-wrap: break-word">Thanks for the business.</div>
+        </div>
+        <div style="left: 32px; top: 804px; position: absolute; color: #1A1C21; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">Please pay within 15 days of receiving this invoice.</div>
+        <div style="left: 100px; top: 24px; position: absolute; flex-direction: column; justify-content: flex-start; align-items: flex-start; gap: 2px; display: inline-flex">
+            <div style="width: 151px; color: #E87117; font-size: 18px; font-family: Inter; font-weight: 600; word-wrap: break-word">Panda, Inc</div>
+            <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">www.website.com</div>
+            <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">hello@email.com</div>
+            <div style="color: #5E6470; font-size: 10px; font-family: Inter; font-weight: 400; line-height: 14px; word-wrap: break-word">+91 00000 00000</div>
+        </div>
+        <div style="width: 48px; height: 48px; left: 32px; top: 24px; position: absolute">
+            <div style="width: 48px; height: 48px; left: 0px; top: 0px; position: absolute; background: #E87117"></div>
+        </div>
+    </div>
+
+</body>
+</html>
